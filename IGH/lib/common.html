@@ -1,0 +1,6 @@
+<h1 id="common-c"><a href="#common-c" class="headerlink" title="common.c"></a>common.c</h1><h2 id="ecrt-version-magic"><a href="#ecrt-version-magic" class="headerlink" title="ecrt_version_magic"></a>ecrt_version_magic</h2><p>函数原型: unsigned int ecrt_version_magic(void)</p>
+<p>作用: 返回 IGH EtherCAT Master 的版本号</p>
+<p>参数列表: void</p>
+<p>返回值: IGH EtherCAT Master 的版本号</p>
+<p>详解: IGH EtherCAT Master 的版本号由主版本号(ECRT_VER_MAJOR)和次版本号(ECRT_VER_MINOR)组成.当调用该函数时,将返回unsigned int 类型的值,该值为32位,其中高16位为0,低16位的较高8位表示主版本号,较低8位表示次版本号.</p>
+<p>实例:假设 IGH EtherCAT Master 的版本号为1.5,则该函数的返回值用16进制表示为0x0015.</p>
