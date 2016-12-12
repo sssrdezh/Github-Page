@@ -5,7 +5,7 @@
   
   <title>Hello World | SSSRDEZH 学习小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="common.cecrt_version_magic函数原型:1unsigned int ecrt_version_magic(void)
+  <meta name="description" content="common.cecrt_version_magic函数原型: unsigned int ecrt_version_magic(void)
 作用: 返回 IGH EtherCAT Master 的版本号
 参数列表:
 
@@ -20,7 +20,7 @@ unsigned int : IGH EtherCAT Master 的版本号
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="https://sssrdezh.github.io/github-page/IGH/lib/common.html">
 <meta property="og:site_name" content="SSSRDEZH 学习小站">
-<meta property="og:description" content="common.cecrt_version_magic函数原型:1unsigned int ecrt_version_magic(void)
+<meta property="og:description" content="common.cecrt_version_magic函数原型: unsigned int ecrt_version_magic(void)
 作用: 返回 IGH EtherCAT Master 的版本号
 参数列表:
 
@@ -31,10 +31,10 @@ void
 unsigned int : IGH EtherCAT Master 的版本号
 
 详解: IGH EtherCAT Master 的版本号由主版本号(ECRT">
-<meta property="og:updated_time" content="2016-12-12T09:00:26.116Z">
+<meta property="og:updated_time" content="2016-12-12T09:16:11.657Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="common.cecrt_version_magic函数原型:1unsigned int ecrt_version_magic(void)
+<meta name="twitter:description" content="common.cecrt_version_magic函数原型: unsigned int ecrt_version_magic(void)
 作用: 返回 IGH EtherCAT Master 的版本号
 参数列表:
 
@@ -100,7 +100,7 @@ unsigned int : IGH EtherCAT Master 的版本号
         <section id="main"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/github-page/IGH/lib/common.html" class="article-date">
-  <time datetime="2016-12-12T09:00:26.116Z" itemprop="datePublished">2016-12-12</time>
+  <time datetime="2016-12-12T09:16:11.657Z" itemprop="datePublished">2016-12-12</time>
 </a>
     
   </div>
@@ -119,25 +119,25 @@ unsigned int : IGH EtherCAT Master 的版本号
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="common-c"><a href="#common-c" class="headerlink" title="common.c"></a>common.c</h1><h2 id="ecrt-version-magic"><a href="#ecrt-version-magic" class="headerlink" title="ecrt_version_magic"></a>ecrt_version_magic</h2><p>函数原型:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">unsigned int ecrt_version_magic(void)</div></pre></td></tr></table></figure></p>
-<p>作用: 返回 IGH EtherCAT Master 的版本号</p>
-<p>参数列表:</p>
+        <h1 id="common-c"><a href="#common-c" class="headerlink" title="common.c"></a>common.c</h1><h2 id="ecrt-version-magic"><a href="#ecrt-version-magic" class="headerlink" title="ecrt_version_magic"></a>ecrt_version_magic</h2><p><strong>函数原型</strong>: unsigned int ecrt_version_magic(void)</p>
+<p><strong>作用</strong>: 返回 IGH EtherCAT Master 的版本号</p>
+<p><strong>参数列表</strong>:</p>
 <ul>
 <li>void</li>
 </ul>
-<p>返回值:</p>
+<p><strong>返回值</strong>:</p>
 <ul>
 <li>unsigned int : IGH EtherCAT Master 的版本号</li>
 </ul>
-<p>详解: IGH EtherCAT Master 的版本号由主版本号(<a href="../include/ecrt.html#ECRT_VER_MAJOR">ECRT_VER_MAJOR</a>)和次版本号(ECRT_VER_MINOR)组成.当调用该函数时,将返回unsigned int 类型的值,该值为32位,其中高16位为0,低16位的较高8位表示主版本号,较低8位表示次版本号.</p>
-<p>实例:假设 IGH EtherCAT Master 的版本号为1.5,则该函数的返回值用16进制表示为0x0015.</p>
-<h2 id="ecrt-request-master"><a href="#ecrt-request-master" class="headerlink" title="ecrt_request_master"></a>ecrt_request_master</h2><p>函数原型:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ec_master_t *ecrt_request_master(unsigned int master_index)</div></pre></td></tr></table></figure></p>
-<p>作用: 为实时运行请求一个 EtherCAT 主站.</p>
-<p>参数列表:</p>
+<p><strong>详解</strong>: IGH EtherCAT Master 的版本号由主版本号(<a href="../include/ecrt.html#ECRT_VER_MAJOR">ECRT_VER_MAJOR</a>)和次版本号(ECRT_VER_MINOR)组成.当调用该函数时,将返回unsigned int 类型的值,该值为32位,其中高16位为0,低16位的较高8位表示主版本号,较低8位表示次版本号.</p>
+<p><strong>示例</strong>:假设 IGH EtherCAT Master 的版本号为1.5,则该函数的返回值用16进制表示为0x0015.</p>
+<h2 id="ecrt-request-master"><a href="#ecrt-request-master" class="headerlink" title="ecrt_request_master"></a>ecrt_request_master</h2><p><strong>函数原型</strong>: ec_master_t *ecrt_request_master(unsigned int master_index)</p>
+<p><strong>作用</strong>: 为实时运行请求一个 EtherCAT 主站.</p>
+<p><strong>参数列表</strong>:</p>
 <ul>
 <li>unsigned int master_index : 主站索引号</li>
 </ul>
-<p>返回值:</p>
+<p><strong>返回值</strong>:</p>
 <ul>
 <li>ec_master_t *</li>
 </ul>
@@ -145,7 +145,7 @@ unsigned int : IGH EtherCAT Master 的版本号
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://sssrdezh.github.io/github-page/IGH/lib/common.html" data-id="ciwluyt9k0003zsr4uay4ncrt" class="article-share-link">Share</a>
+      <a data-url="https://sssrdezh.github.io/github-page/IGH/lib/common.html" data-id="ciwlv07cp00049sr409b88w3n" class="article-share-link">Share</a>
       
       
     </footer>
